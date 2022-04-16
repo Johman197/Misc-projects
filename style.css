@@ -34,7 +34,7 @@ body {
   padding-top: 18%;
   height: 95%;
   width: 90%;
-  /* border: 1px solid purple; */
+  border: 1px solid purple;
 }
 
 .login-content a {
