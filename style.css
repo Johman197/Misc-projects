@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: #50dcc2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  /* border: 5px solid green; */
+  background-color: #1f4b60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: 2rem; */
+  width: 30%;
+  height: 42em;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 18%;
+  height: 95%;
+  width: 90%;
+  /* border: 1px solid purple; */
+}
+
+.login-content a {
+  /* margin-top: 8rem; */
+  /* margin-top: 8rem 0 1rem 0; */
+  color: #fff;
+  text-decoration: none;
+  /* border: 2px solid steelblue; */
+}
+
+.login-title {
+  margin: 0;
+  color: #50dcc2;
+  /* color: linear-gradient(to top, #429686, #50dcc2); */
+  letter-spacing: 0.18em;
+}
+
+.login-title span {
+  font-weight: 300;
+  border-bottom: 2px solid #50dcc2;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1em 0 1em;
+  margin-bottom: 6rem;
+  min-height: 200px;
+  color: white;
+  /* border: 1px solid firebrick; */
+}
+
+/**** Making sure input fields do not over-extend parent container ****/
+.width-class {
+  width: 100%;
+  text-align: center;
+  background-color: #0f2d3f;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 1.2rem;
+  transition: 500ms;
+  transform: scale(1);
+}
+
+.width-class:hover,
+.width-class:focus {
+  transform: scale(1.15);
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#login-Btn {
+  background: linear-gradient(to right, #50dcc2, #2cb198);
+  font-weight: 900;
+  font-size: 100%;
+  transition: 500ms;
+  transform: scale(1);
+}
+#login-Btn:hover,
+#login-Btn:focus {
+  transform: scale(1.15);
+}
+
+/**** Media Query ****/
+@media (max-width: 1250px) {
+  .login-container {
+    min-width: 400px;
+    min-height: 500px;
+  }
+  .login-form {
+    min-height: 200px;
+  }
+}
+
+@media (max-height: 600px) {
+  .login-container {
+    min-height: 31.25em;
+    margin-top: 1em;
+  }
+  .login-form {
+    margin-top: 3em;
+  }
+}
